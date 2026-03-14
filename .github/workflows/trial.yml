@@ -7,9 +7,11 @@ on:                     # event trigger
 
 jobs:
   build:                       #jobID
-    runs-on: uubuntu-latest    #runner for the job
+    runs-on: ubuntu-latest    #runner for the job
 
     steps:
+      - name: checkout code
+        uses: actions/checkout@v4
     
     
 
