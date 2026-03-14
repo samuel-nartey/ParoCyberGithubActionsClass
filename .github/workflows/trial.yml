@@ -7,6 +7,7 @@ on:                     # event trigger
 
 jobs:
   build:                       #jobID-first job
+    name:  First Job
     runs-on: ubuntu-latest    #runner for the job
     needs: test
     
@@ -16,7 +17,9 @@ jobs:
         uses: actions/checkout@v6
 
   test:                        #jobID-second job
+    name: second job
     runs-on: ubuntu-latest
+    
  
 
     steps: 
