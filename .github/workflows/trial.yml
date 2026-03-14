@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - name: checkout code
-        run: actions/checkout@v6
+        uses: actions/checkout@v6
 
   test:                        #jobID-second job
     runs-on: ubutnut-latest
 
     steps: 
       - name: print a statement
-        uses:  echo "second job"
+        run:  echo "second job"
     
     
 
