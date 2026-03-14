@@ -1,1 +1,19 @@
+name: trial_workflow   #name of worklow
 
+on:                     # event trigger
+  push:
+    branches: [main]
+
+
+jobs:
+  build:                       #jobID
+    runs-on: uubuntu-latest    #runner for the job
+
+    steps:
+    
+    
+
+
+ 
+
+  
