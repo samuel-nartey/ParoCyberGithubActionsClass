@@ -6,12 +6,19 @@ on:                     # event trigger
 
 
 jobs:
-  build:                       #jobID
+  build:                       #jobID-first job
     runs-on: ubuntu-latest    #runner for the job
 
     steps:
       - name: checkout code
-        uses: actions/checkout@v6
+        run: actions/checkout@v6
+
+  test:                        #jobID-second job
+    runs-on: ubutnut-latest
+
+    steps: 
+      - name: print a statement
+        uses:  echo "second job"
     
     
 
