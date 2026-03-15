@@ -18,7 +18,7 @@ jobs:
 
   test:                        #jobID-second job
     name: second job
-    runs-on: ubuntu-latest
+    runs-on: runner-1
     
  
 
