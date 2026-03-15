@@ -8,7 +8,7 @@ on:                     # event trigger
 jobs:
   build:                       #jobID-first job
     name:  First Job
-    runs-on: ubuntu-latest    #runner for the job
+    runs-on: runner-1    #runner for the job
     needs: test
     
 
