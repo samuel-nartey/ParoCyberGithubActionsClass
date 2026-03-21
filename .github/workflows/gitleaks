@@ -1,0 +1,21 @@
+name: gitleaks
+on:
+  workflow_dispatch:
+
+
+jobs:
+  scan:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run gitleaks scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }} # Only required for organizations
+            GITLEAKS_NOTIFY_USER_LIST: "samuelnarteyotuafo@gmail.com,narteyotuafosamuel@gmail.com" # Users to notify via GitHub
