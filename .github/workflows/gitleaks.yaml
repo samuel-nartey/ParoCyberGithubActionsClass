@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }} # Only required for organizations
-            GITLEAKS_NOTIFY_USER_LIST: "samuelnarteyotuafo@gmail.com,narteyotuafosamuel@gmail.com" # Users to notify via GitHub
+          GITLEAKS_NOTIFY_USER_LIST: "samuelnarteyotuafo@gmail.com,narteyotuafosamuel@gmail.com" # Users to notify via GitHub
